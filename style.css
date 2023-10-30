@@ -1,0 +1,297 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+:root {
+	--bg-color: #f1f1f1;
+	--footer-color: #121723;
+	--screen-size: 100%;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+body {
+	height: 100%;
+	background-color: var(--bg-color);
+}
+
+header {
+	background-color: white;
+	padding: 20px 0px;
+	margin-bottom: 25px;
+	width: 100vw;
+	border-bottom: 1px solid #a1a6b4;
+}
+
+.header-container {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1160px;
+}
+
+header .links {
+	display: flex;
+	gap: 24px;
+}
+
+.link {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.logo {
+	cursor: pointer;
+	width: 240px;
+}
+
+
+.main h2 {
+	font-family: 'Anonymous Pro', monospace;
+    font-size: 48px;
+	margin-bottom: 25px;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	max-width: 1160px;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+.sneaker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 12px;
+	height: min-content;
+	width: 371px;
+	background-color: white;
+}
+
+.sneaker img {
+	width: inherit;
+	margin-bottom: 32px;
+}
+
+.sneaker .text {
+	width: 100%;
+	padding: 0 25px;
+	margin-bottom: 32px;
+}
+
+.sneaker h3 {
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-top: 25px;
+	width: 100vw;
+	background-color: var(--footer-color);
+}
+
+.footer-container {
+	margin: 0 auto;
+	max-width: 1160px;
+}
+
+footer .info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	border-bottom: 1px solid rgba(230, 232, 236, 0.40);;
+}
+
+footer .logo {
+	font-family: 'Russo One', sans-serif;
+	font-size: 42px;
+	color: white;
+}
+
+footer .links {
+	display: flex;
+	gap: 24px;
+	color: white;
+}
+
+.law-info {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.lawInfo {
+	color: white;
+	font-size: 16px;
+}
+
+@media screen and (768px < width < 1160px) {
+	.header-container {
+		max-width: 768px;
+	}
+
+	.logo {
+		width: 200px;
+	}
+
+	.link {
+		font-size: 20px;
+	}
+
+	.main-wrapper {
+		max-width: 768px;
+	}
+
+	.main h2 {
+		font-size: 40px;
+	}
+
+	.main-container {
+		gap: 18px;
+	}
+
+	.sneaker {
+		width: 244px;
+	}
+
+	.sneaker h3 {
+		font-size: 20px;
+	}
+
+	.sneaker .text {
+		padding: 0 20px;
+	}
+
+	.footer-container {
+		max-width: 980px;
+	}
+
+	.footer .info {
+		padding: 20px 0;
+	}
+}
+
+@media screen and (425px < width <= 768px) {
+	.header-container {
+		max-width: 80%;
+	}
+
+	.logo {
+		width: 120px;
+	}
+
+	.link {
+		font-size: 16px;
+	}
+
+	.main-wrapper {
+		max-width: 80%;
+	}
+
+	.main h2 {
+		font-size: 20px;
+	}
+
+	.main-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 12px;
+	}
+
+	.sneaker {
+		width: 100%;
+	}
+
+	.sneaker h3 {
+		font-size: 14px;
+	}
+
+	.sneaker p {
+		font-size: 12px;
+	}
+
+	.sneaker .text {
+		padding: 0 15px;
+	}
+
+	.footer-container {
+		max-width: 80%;
+	}
+
+	.footer .info {
+		padding: 10px 0;
+	}
+}
+
+@media screen and (width <= 425px) {
+	.header-container {
+		max-width: 80%;
+	}
+
+	.logo {
+		width: 100px;
+	}
+
+	.link {
+		font-size: 12px;
+	}
+
+	.main-wrapper {
+		max-width: 80%;
+	}
+
+	.main h2 {
+		font-size: 20px;
+	}
+
+	.main-container {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12px;
+	}
+
+	.sneaker {
+		width: 100%;
+	}
+
+	.sneaker h3 {
+		font-size: 14px;
+	}
+
+	.sneaker p {
+		font-size: 12px;
+	}
+
+	.sneaker .text {
+		padding: 0 15px;
+	}
+
+	.footer-container {
+		max-width: 80%;
+	}
+
+	.footer .info {
+		padding: 10px 0;
+	}
+}
