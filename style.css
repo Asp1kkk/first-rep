@@ -9,6 +9,7 @@
 	--bg-color: #f1f1f1;
 	--footer-color: #121723;
 	--screen-size: 100%;
+	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
 }
 
 img {
