@@ -51,6 +51,10 @@ header .links {
 	gap: 24px;
 }
 
+.header .link:hover {
+	opacity: 0.6;
+}
+
 .link {
 	font-weight: bold;
 	font-size: 24px;
@@ -87,6 +91,11 @@ header .links {
 	height: min-content;
 	width: 371px;
 	background-color: white;
+}
+
+.sneaker:hover {
+	cursor: pointer;
+	outline: 1px solid black;
 }
 
 .sneaker img {
@@ -135,6 +144,10 @@ footer .links {
 	display: flex;
 	gap: 24px;
 	color: white;
+}
+
+.footer .link:hover {
+	opacity: 0.8;
 }
 
 .law-info {
