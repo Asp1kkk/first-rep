@@ -98,7 +98,7 @@ header .links {
 
 .sneaker:hover {
 	cursor: pointer;
-	outline: 1px solid black;
+	outline: 1px solid #121723;
 	transform-style: preserve-3d;
 	transform: translateZ(-55px) scale(1.1);
 	will-change: transform;
