@@ -9,7 +9,7 @@
 	--bg-color: #f1f1f1;
 	--footer-color: #121723;
 	--screen-size: 100%;
-	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+	--transition: 1.5s cubic-bezier(0,.59,.81,.98)
 }
 
 img {
@@ -98,7 +98,7 @@ header .links {
 
 .sneaker:hover {
 	cursor: pointer;
-	outline: 1px solid #121723;
+	box-shadow: 0px 0px 40px 15px rgba(34, 60, 80, 0.2);
 	transform-style: preserve-3d;
 	transform: translateZ(-55px) scale(1.1);
 	will-change: transform;
