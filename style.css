@@ -90,9 +90,8 @@ header .links {
 	background-color: white;
 	border-radius: 12px;
 	width: 371px;
-	transform-style: preserve-3d;
+	height: 100%;
 	transition: transform var(--transition);
-	
 }
 
 .sneaker:hover {
